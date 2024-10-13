@@ -1,18 +1,21 @@
 <ion-header>
   <ion-toolbar color="transparent">
-    <ion-title>Login</ion-title>
+    <ion-title class="title-with-logo">
+      <img src="assets/icon/logo.jpeg" alt="Padaria Fênix" class="logo">
+      Padaria Fênix
+    </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content fullscreen>
+<ion-content fullscreen class="background">
   <div class="container">
-    <img src="assets/logo.png" alt="Padaria Fênix" class="logo">
-    <h2>Login</h2>
+    <h3>Login</h3>
 
     <ion-item>
       <ion-icon name="mail" slot="start"></ion-icon>
-      <ion-input placeholder="Digite seu email"></ion-input>
+      <ion-input placeholder="Digite seu email" type="email"></ion-input>
     </ion-item>
+
     <ion-item>
       <ion-icon name="lock" slot="start"></ion-icon>
       <ion-input type="password" placeholder="Digite sua senha"></ion-input>

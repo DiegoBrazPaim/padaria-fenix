@@ -1,0 +1,63 @@
+<ion-menu side="start" contentId="main-content">
+  <ion-header>
+    <ion-toolbar color="primary">
+      <ion-title>Menu</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content>
+    <ion-list>
+      <ion-item routerLink="/cadastro">
+        <ion-icon name="person-add" slot="start"></ion-icon>
+        <ion-label>Cadastro</ion-label>
+      </ion-item>
+      <!-- Botão de Voltar para Home -->
+      <ion-item routerLink="/home">
+        <ion-icon name="arrow-back" slot="start"></ion-icon>
+        <ion-label>Voltar para Home</ion-label>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-menu>
+
+<!-- Página Principal -->
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Padaria Fenix</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content id="main-content">
+  <div class="category-section">
+    <h2>Pães</h2>
+    <ion-list>
+      <ion-item>
+        <ion-thumbnail slot="start">
+          <img src="assets/icon/pao-frances.jpeg" />
+        </ion-thumbnail>
+        <ion-label>Pão Francês</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-thumbnail slot="start">
+          <img src="assets/icon/broa.jpg" />
+        </ion-thumbnail>
+        <ion-label>Broa</ion-label>
+      </ion-item>
+    </ion-list>
+  </div>
+
+  <div class="category-section">
+    <h2>Bebidas</h2>
+    <ion-list>
+      <ion-item>
+        <ion-thumbnail slot="start">
+          <img src="assets/icon/coca.jpeg" />
+        </ion-thumbnail>
+        <ion-label>Coca-Cola 2 Litros</ion-label>
+      </ion-item>
+    </ion-list>
+  </div>
+</ion-content>

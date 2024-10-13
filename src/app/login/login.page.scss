@@ -1,0 +1,50 @@
+.title-with-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  width: 40px; /* Tamanho mais adequado para apps */
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 10px;
+}
+
+.background {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 20px;
+}
+
+.container {
+  max-width: 400px; /* Tamanho máximo para layout mobile */
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+ion-item {
+  --min-height: 50px;
+}
+
+h3 {
+  font-size: 1.8rem;
+}
+
+p {
+  margin-top: 15px;
+  font-size: 1rem;
+}
+
+@media (min-width: 600px) {
+  h3 {
+    font-size: 2rem;
+  }
+  p {
+    font-size: 1.1rem;
+  }
+}

@@ -1,12 +1,14 @@
 <ion-header>
   <ion-toolbar color="transparent">
-    <ion-title>Cadastro</ion-title>
+    <ion-title style="display: flex; align-items: center; justify-content: center;">
+      <img src="assets/icon/logo.jpeg" alt="Padaria Fênix" class="logo" style="margin-right: 10px;">
+      Padaria Fênix
+    </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content fullscreen>
-  <div class="container">
-    <img src="assets/logo.png" alt="Padaria Fênix" class="logo">
+  <div class="container" style="text-align: center;">
     <h2>Cadastro</h2>
 
     <ion-item>
@@ -23,15 +25,16 @@
     </ion-item>
     <ion-item>
       <ion-icon name="pin" slot="start"></ion-icon>
-      <ion-input placeholder="Digite seu CEP"></ion-input>
+      <ion-input placeholder="Digite seu CEP" (ionInput)="getAddress($event.target.value?.toString() ?? '')"></ion-input>
+
     </ion-item>
     <ion-item>
       <ion-icon name="location" slot="start"></ion-icon>
-      <ion-input placeholder="Digite seu bairro"></ion-input>
+      <ion-input placeholder="Digite seu bairro" [(ngModel)]="bairro" disabled></ion-input>
     </ion-item>
     <ion-item>
       <ion-icon name="home" slot="start"></ion-icon>
-      <ion-input placeholder="Digite sua rua"></ion-input>
+      <ion-input placeholder="Digite sua rua" [(ngModel)]="rua" disabled></ion-input>
     </ion-item>
 
     <ion-button expand="block" color="warning">Cadastrar</ion-button>
